@@ -1,0 +1,174 @@
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+        1px 1px 3px black,
+        1px 1px 5px rgba(0, 0, 0, 0.5),
+        1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 4vh;
+    line-height: 4vh;
+    margin: 2vh 0;
+}
+
+h2 {
+    font-size: 3vh;
+    line-height: 3vh;
+    margin: 0;
+}
+
+p {
+    font-size: 2.4vh;
+    line-height: 2.4vh;
+}
+
+.header {
+    /* Adicione estilos específicos para o cabeçalho se necessário */
+}
+
+#mensagem.vencedor {
+    background-color: rgb(255, 87, 87);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container {
+    width: 90vw;
+    padding: 0 5vh;
+}
+
+#buttonArea {
+    height: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#buttonArea button {
+    all: unset;
+    background-color: rgb(82, 151, 255);
+    padding: 1vh 3vw;
+    border-radius: 2vh;
+    font-size: 2.8vh;
+    font-weight: 600;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    column-gap: 3vw;
+}
+
+.jogo>div {
+    /* Adicione estilos específicos para os elementos dentro de .jogo se necessário */
+}
+
+.jogo .jogadores {
+    flex-grow: 3;
+}
+
+.jogo .sorteio {
+    flex-grow: 1;
+}
+
+#jogadoresArea {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    row-gap: 2vh;
+}
+
+#jogadoresArea .cartela {
+    background-color: rgb(31, 40, 58);
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    padding: 15px;
+}
+
+#jogadoresArea .cartela.vencedor {
+    background-color: rgb(58, 39, 31);
+}
+
+#jogadoresArea .cartela .nomeJogador {
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+#jogadoresArea .cartela .numerosArea {
+    display: grid;
+    flex-grow: 2;
+    row-gap: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-auto-flow: column;
+    font-size: 2.8vh;
+    font-weight: 700;
+}
+
+#jogadoresArea .cartela .numerosArea .numero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    border-radius: 12px;
+}
+
+#jogadoresArea .cartela .numerosArea .numero.sorteado {
+    background-color: rgb(0, 196, 49);
+}
+
+#jogadoresArea .cartela .numerosArea .bingo {
+    color: rgb(255, 251, 41);
+    font-size: 3.4vh;
+    font-weight: 800;
+}
+
+#jogadoresArea .cartela .bingoArea {
+    display: grid;
+    row-gap: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    font-size: 3vh;
+    font-weight: 700;
+    color: rgb(255, 255, 177);
+}
+
+#jogadoresArea .cartela .bingoArea .letra {
+    /* Adicione estilos específicos para as letras se necessário */
+}
+
+.sorteio {
+    height: 100%;
+    border-radius: 2vh;
+    background-color: rgb(19, 63, 36);
+}
+
+#sorteados {
+    display: grid;
+    flex-grow: 2;
+    row-gap: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 2vh 5%;
+    font-size: 2.4vh;
+    font-weight: 700;
+}
